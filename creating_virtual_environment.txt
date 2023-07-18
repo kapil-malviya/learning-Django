@@ -1,0 +1,152 @@
+D:\>python --version
+Python 3.11.1
+
+
+D:\>pip install virtualenv
+Collecting virtualenv
+  Obtaining dependency information for virtualenv from https://files.pythonhosted.org/packages/c5/d5/f914b715f8b4c2ae8ca10112d389c04bed368ddd8888b70dafe740269bb5/virtualenv-20.24.0-py3-none-any.whl.metadata
+  Downloading virtualenv-20.24.0-py3-none-any.whl.metadata (4.5 kB)
+Collecting distlib<1,>=0.3.6 (from virtualenv)
+  Downloading distlib-0.3.6-py2.py3-none-any.whl (468 kB)
+     ---------------------------------------- 468.5/468.5 kB 1.3 MB/s eta 0:00:00
+Collecting filelock<4,>=3.12 (from virtualenv)
+  Obtaining dependency information for filelock<4,>=3.12 from https://files.pythonhosted.org/packages/00/45/ec3407adf6f6b5bf867a4462b2b0af27597a26bd3cd6e2534cb6ab029938/filelock-3.12.2-py3-none-any.whl.metadata
+  Downloading filelock-3.12.2-py3-none-any.whl.metadata (2.7 kB)
+Collecting platformdirs<4,>=3.5.1 (from virtualenv)
+  Obtaining dependency information for platformdirs<4,>=3.5.1 from https://files.pythonhosted.org/packages/6d/a7/47b7088a28c8fe5775eb15281bf44d39facdbe4bc011a95ccb89390c2db9/platformdirs-3.9.1-py3-none-any.whl.metadata
+  Downloading platformdirs-3.9.1-py3-none-any.whl.metadata (11 kB)
+Downloading virtualenv-20.24.0-py3-none-any.whl (3.0 MB)
+   ---------------------------------------- 3.0/3.0 MB 2.7 MB/s eta 0:00:00
+Downloading filelock-3.12.2-py3-none-any.whl (10 kB)
+Downloading platformdirs-3.9.1-py3-none-any.whl (16 kB)
+Installing collected packages: distlib, platformdirs, filelock, virtualenv
+Successfully installed distlib-0.3.6 filelock-3.12.2 platformdirs-3.9.1 virtualenv-20.24.0
+
+
+
+D:\>cd project1
+
+
+
+D:\project1>virtualenv venv
+created virtual environment CPython3.11.1.final.0-64 in 35267ms
+  creator CPython3Windows(dest=D:\project1\venv, clear=False, no_vcs_ignore=False, global=False)
+  seeder FromAppData(download=False, pip=bundle, setuptools=bundle, wheel=bundle, via=copy, app_data_dir=C:\Users\Dell\AppData\Local\pypa\virtualenv)
+    added seed packages: pip==23.1.2, setuptools==68.0.0, wheel==0.40.0
+  activators BashActivator,BatchActivator,FishActivator,NushellActivator,PowerShellActivator,PythonActivator
+
+
+
+D:\project1>cd venv\Scripts\activate
+The directory name is invalid.
+
+
+
+D:\project1>cd venv\Scripts\
+
+
+
+D:\project1\venv\Scripts>activate
+
+
+
+(venv) D:\project1\venv\Scripts>pip install django
+Collecting django
+  Downloading Django-4.2.3-py3-none-any.whl (8.0 MB)
+     ---------------------------------------- 8.0/8.0 MB 3.9 MB/s eta 0:00:00
+Collecting asgiref<4,>=3.6.0 (from django)
+  Downloading asgiref-3.7.2-py3-none-any.whl (24 kB)
+Collecting sqlparse>=0.3.1 (from django)
+  Using cached sqlparse-0.4.4-py3-none-any.whl (41 kB)
+Collecting tzdata (from django)
+  Using cached tzdata-2023.3-py2.py3-none-any.whl (341 kB)
+Installing collected packages: tzdata, sqlparse, asgiref, django
+Successfully installed asgiref-3.7.2 django-4.2.3 sqlparse-0.4.4 tzdata-2023.3
+
+[notice] A new release of pip is available: 23.1.2 -> 23.2
+[notice] To update, run: python.exe -m pip install --upgrade pip
+
+
+
+
+
+(venv) D:\project1\venv\Scripts> django-admin startproject myproject
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+To create a virtual environment for a Django project, you can follow these steps :
+
+
+-> Make sure you have Python installed on your system. You can check the version by running the command
+	~python --version   or   ~python3 --version
+
+
+-> Install the virtualenv package if it's not already installed. Run the following command to install it : 
+	~pip install virtualenv
+
+
+-> Create a new directory for your Django project (if you haven't already) and navigate to that directory 
+	using the `cd` command.
+
+
+-> Create a new virtual environment by running the following command :
+	~virtualenv venv
+	- This will create a new directory named `venv` (you can choose a different name if you prefer) that 
+		contains the virtual environment files.
+
+
+-> Activate the virtual environment. The command to activate the virtual environment depends on your operating system :
+
+   - For Windows :
+      ~venv\Scripts\activate
+
+   - For macOS and Linux :
+      ~source venv/bin/activate
+
+	Once activated, you should see `(venv)` at the beginning of your command prompt, indicating that you're inside 
+	the virtual environment.
+
+
+
+-> Now you can install Django and other project dependencies within the virtual environment. Run the following command :
+    ~pip install django
+
+	This will install Django and any other packages you specify in the future while the virtual environment is active.
+
+
+
+-> You're ready to start working on your Django project within the virtual environment. You can create a new Django project 
+	using the `django-admin` command. For example :
+   
+	~django-admin startproject myproject
+
+   This will create a new directory named `myproject` (you can choose a different name) containing the initial Django project files.
+
+
+
+Remember to activate the virtual environment every time you work on your Django project. This ensures that you're using the 
+packages and dependencies installed within the virtual environment and avoids conflicts with other Python projects on your system.
+
+To deactivate the virtual environment, simply run the `deactivate` command in the terminal/command prompt.
+
