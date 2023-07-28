@@ -1,0 +1,16 @@
+.jumbotron{
+  margin-top: 200px;
+  background-color: lightseagreen;
+}
+body{
+  background: url(https://images.unsplash.com/photo-1550684376-efcbd6e3f031?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  font-size: 22px
+}
+img{
+  width: 20%;
+  height: 250px;
+  border: 10px groove red;
+}
