@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>showing db information</title>
+  </head>
+  <body>
+    <h1>Employees Information</h1> <hr>
+    {% if employees %}
+
+      <table border="8">
+        <thead>
+          <th>Employee Number</th>
+          <th>Employee Name</th>
+          <th>Employee Salary</th>
+          <th>Employee Address</th>
+        </thead>
+
+        {% for emp in employees %}
+            <tr>
+              <td>{{emp.eno}}</td>
+              <td>{{emp.ename}}</td>
+              <td>{{emp.esal}}</td>
+              <td>{{emp.eaddr}}</td>
+            </tr>
+
+        {% endfor %}
+      </table>
+      {% else %}
+        <p>No Employee Records Found</p>
+    {% endif %}
+
+  </body>
+</html>
