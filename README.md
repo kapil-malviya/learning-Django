@@ -73,16 +73,13 @@ Before using the Django projects in this repository, make sure you have the foll
 3. Create a virtual environment (recommended):
    ``` refer creating_virtual_environment.txt file in this repository ```
 
-4. Install project-specific dependencies (if any):
-   ```specified in the project itself
-   ```
 
-5. Run the Django development server:
+4. Run the Django development server:
    ```bash
    python manage.py runserver
    ```
 
-6. Open your web browser and visit [http://localhost:8000/](http://localhost:8000/) to view the project.
+5. Open your web browser and visit [http://localhost:8000/](http://localhost:8000/) to view the project.
 
 Feel free to explore the projects, experiment with the code, and learn more about Django!
 
@@ -92,4 +89,3 @@ If you'd like to contribute to this repository by adding more projects, covering
 please feel free to submit a pull request.
 
 Happy learning and coding!
-```
