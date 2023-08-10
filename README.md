@@ -87,5 +87,3 @@ Feel free to explore the projects, experiment with the code, and learn more abou
 
 If you'd like to contribute to this repository by adding more projects, covering additional concepts, or making improvements, 
 please feel free to submit a pull request.
-
-Happy learning and coding!
