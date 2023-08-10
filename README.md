@@ -1,4 +1,4 @@
-# Django Practice Repository
+# Django Repository
 
 Welcome to the "django-practice" repository! This repository serves as a learning resource for mastering Django 
 web development. It contains a series of basic Django projects that cover essential concepts, each designed to 
@@ -14,22 +14,18 @@ The repository currently includes the following projects:
 
 3. **Database Models and Migrations**: Explains creating models for data structures, making migrations, and interacting with the database.
 
-## Upcoming Concepts
+4. **Session Management**: How to manage user sessions and utilize session-based data storage in Django applications.
 
-In the future, we plan to expand this repository to cover additional concepts, including but not limited to:
-
-1. **Session Management**: How to manage user sessions and utilize session-based data storage in Django applications.
-
-2. **Database Configuration**:
+5. **Database Configuration**:
    - MySQL: Integrating MySQL as the database backend for your Django projects.
    - PostgreSQL: Configuring PostgreSQL as an alternative database option.
    - MongoDB: Exploring MongoDB integration for NoSQL data storage.
 
-3. **Form Handling**: Creating and handling forms in Django applications for user input and data validation.
+6. **Form Handling**: Creating and handling forms in Django applications for user input and data validation.
 
-4. **User Authentication**: Implementing user registration, login, and authentication mechanisms.
+7. **User Authentication**: Implementing user registration, login, and authentication mechanisms.
 
-5. **RESTful APIs**: Building RESTful APIs using Django Rest Framework for creating web services.
+8. **RESTful APIs**: Building RESTful APIs using Django Rest Framework for creating web services.
 
 
 
@@ -71,7 +67,7 @@ Before using the Django projects in this repository, make sure you have the foll
    ```
 
 3. Create a virtual environment (recommended):
-   ``` refer creating_virtual_environment.txt file in this repository ```
+    refer ``` creating_virtual_environment.txt ``` file in this repository 
 
 
 4. Run the Django development server:
