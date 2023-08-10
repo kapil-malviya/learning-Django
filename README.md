@@ -1,6 +1,6 @@
 # Django Repository
 
-Welcome to the "django-practice" repository! This repository serves as a learning resource for mastering Django 
+Welcome to the "django" repository! This repository serves as a learning resource for mastering Django 
 web development. It contains a series of basic Django projects that cover essential concepts, each designed to 
 help you understand and practice different aspects of web application development using Django.
 
