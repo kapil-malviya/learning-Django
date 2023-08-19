@@ -1,0 +1,13 @@
+body{background: greenyellow;}
+.container .jumbotron{
+						margin-top: 120px;
+						background: seagreen;
+						padding: 30px;
+						border-radius: 60px;
+							}
+
+teble, tr, td, thead, th{
+						border: 2px solid darkred;
+						font-size: 30px;
+						background: red;
+						color: whitesmoke;}
