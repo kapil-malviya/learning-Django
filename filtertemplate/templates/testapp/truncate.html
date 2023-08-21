@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% load custom_filters%}
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> custom filters case </title>
+</head>
+<body>
+
+{% for r in data_list %}
+
+<ul>
+	<li>{{r.name | lower }}</li>
+	<li>{{r.name |tcate:2}}</li>
+	<li>{{r.subject | lower}}</li>
+	<li>{{r.subject |tcate:3}}</li>
+	<li>{{r.dept | lower}}</li>
+	<li>{{r.dept |tcate:4}}</li>
+	<li>{{r.date | upper}}</li>
+	<li>{{r.date | lower }}</li>
+</ul>
+
+<hr>
+
+{% endfor %}
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> lower case </title>
+</head>
+<body>
+
+{% for r in data_list %}
+
+<ul>
+	<li>{{r.name | add:" Pvt Ltd"}}</li>
+	<li>{{r.subject | lower}}</li>
+	<li>{{r.subject | upper}}</li>
+	<li>{{r.dept | lower}}</li>
+	<li>{{r.dept | title }}</li>
+	<li>{{r.date |date:"d-m-Y"}}</li>
+	<li>{{r.date | timesince }}</li>
+</ul>
+
+<hr>
+
+{% endfor %}
+
+</body>
+</html>
