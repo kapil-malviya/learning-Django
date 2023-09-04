@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>result</title>
+</head>
+<body>
+
+<h1>Thanks for providing info, please confirm once...</h1> <hr>
+<form action="/">
+
+<ul>
+{% for key, value in request.session.items %}
+
+<li> <h2>{{key | upper}} : {{value | title}}</h2> </li>
+
+<li> <h2>{{key}} : {{value}}</h2> </li>
+
+{% endfor %}
+
+</ul>
+
+</form>
+
+</body>
+</html>
