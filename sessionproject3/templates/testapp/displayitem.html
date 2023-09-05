@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+{% extends 'testapp/base.html' %}
+
+{% block body_block %}
+
+<h1>Your Items</h1>
+
+{% if request.session %}
+
+<table>
+	<thead>
+		<th>Name of Item</th> 
+		<th>Quality</th>
+	</thead>
+	
+	{% for key, value in request.session.items %}
+<tr>
+<td> {{key}} &nbsp &nbsp &nbsp &nbsp</td>
+<td> {{value}} </td>
+</tr>
+{% endfor %}
+
+{% else %}
+
+<h2>No Items Added</h2>
+
+</table>
+{% endif %}
+
+
+{% endblock %}
