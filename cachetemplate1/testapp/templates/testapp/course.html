@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{% load cache %}
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Courses</title>
+</head>
+<body>
+
+<h1>Secops</h1>
+<h1>Devops</h1>
+<h1>Cloud Architect</h1>
+<h1>Backend</h1>
+<h1>Frontend</h1>
+{% cache 60 course %}
+<h1>DBA</h1>
+<h1>BBA</h1>
+<h1>MBA</h1> 
+{% endcache course %}
+
+</body>
+</html>
