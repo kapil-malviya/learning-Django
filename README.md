@@ -58,21 +58,21 @@ Before using the Django projects in this repository, make sure you have the foll
 
 1. Clone this repository to your local machine:
    ```bash
-   git clone https://github.com/kapil-malviya/django.git
+   git clone https://github.com/kapil-malviya/learning-Django.git
    ```
 
 2. Navigate to the project you want to explore:
    ```bash
-   cd django/project
+   cd learning-Django/project
    ```
 
 3. Create a virtual environment (recommended):
-    refer ``` creating_virtual_environment.txt ``` file in this repository 
+    refer ``` CREATE_VIRTUAL_ENV.md ``` file in this repository 
 
 
 4. Run the Django development server:
    ```bash
-   python manage.py runserver
+   python3 manage.py runserver
    ```
 
 5. Open your web browser and visit [http://localhost:8000/](http://localhost:8000/) to view the project.
