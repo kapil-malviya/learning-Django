@@ -90,6 +90,6 @@ To deactivate the virtual environment when you're done working on your project, 
 ```bash
 source venv/bin/deactivate
 ```
-
+#
 
 Replace the placeholders such as "myproject" with your actual project name and customize the content as needed for your specific project.
