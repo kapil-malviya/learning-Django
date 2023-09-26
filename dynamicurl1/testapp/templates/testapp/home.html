@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>home</title>
+</head>
+<body>
+
+<h3>home template</h3>
+
+<h2>..</h2>
+
+<a href="{% url 'detail' 1 %}"> Student 1 </a>
+<a href="{% url 'detail' 8 %}"> Student 8 </a>
+<a href="{% url 'detail' 28 %}"> Student 28 </a>
+<a href="{% url 'detail' 888 %}"> Student 888 </a>
+
+<hr>
+
+<a href="{% url 'subdetail' 1 1001 %}"> Sub Student 1001 </a>
+<a href="{% url 'subdetail' 8 1008 %}"> Sub Student 1008 </a>
+<a href="{% url 'subdetail' 28 1028 %}"> Sub Student 1028 </a>
+<a href="{% url 'subdetail' 888 1888 %}"> Sub Student 1888 </a>
+
+</body>
+</html>
