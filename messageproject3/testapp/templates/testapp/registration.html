@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Registration</title>
+
+
+<style type="text/css">
+
+.success{color: green;}
+.info{color: blue;}
+.warning{color: red;}
+.error{background-color: red; color: whitesmoke;}
+.danger{color: forestgreen;}
+
+</style>
+
+
+</head>
+<body>
+
+
+<form method="post">
+
+	{% csrf_token %}
+	{{ form.as_p }}
+
+	<input type="submit" name="Submit">
+
+
+</form>
+
+
+{% if messages %}
+
+{% for msg in messages %}
+
+  <!-- {% if msg.tags %}  {{msg.tags}} {% endif %} -->
+   <!-- we use these tags for css -->
+
+
+<p {% if msg.tags %}  class="{{msg.tags}}"   {% endif %} > {{msg}} </p>
+
+
+{% endfor %}
+
+{% endif %}
+
+</body>
+</html>
