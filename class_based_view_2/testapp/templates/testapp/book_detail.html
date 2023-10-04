@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+{% extends 'testapp/base.html' %}
+
+{% block body_block %}
+
+<h1> {{book.title}} Book informations</h1>
+
+
+<ul>
+<li>Book Title : {{book.title}} </li>
+<li>Book Author : {{book.author}} </li>
+<li>Book Pages : {{book.pages}} </li>
+<li>Book Price : {{book.price}} </li>
+</ul>
+
+
+
+
+{% endblock %}
