@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+{% extends 'testapp/base.html' %}
+
+{% block body_block %}
+
+<h1>Company informations</h1>
+
+{% for company in company_list %}
+
+<h2> <a href="/{{company.id}}">{{company.name}}</a> </h2>
+
+{% endfor %}
+
+<hr>
+
+<a href="/create/" class="btn btn-primary btn-md">Register Another Company</a>
+
+{% endblock %}
